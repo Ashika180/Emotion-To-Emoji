@@ -1,0 +1,100 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@600&family=Pirata+One&family=Redressed&family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h3 class= "btn btn-warning heading"> Emotion To Emoji 
+        <br>
+
+        <span>
+        &#128522;
+        </span>
+
+        <span>
+          &#128512;
+        </span>
+
+         <span>
+           &#128532;
+         </span>
+
+         <span>
+          &#128546;
+        </span>
+
+        <span>
+          &#128545;
+        </span>
+
+        <span>
+          &#128548;
+        </span>
+      
+      </h3>
+
+      <br><br>
+
+      <b><p style="font-size: 22px; font-family: fantasy; color: maroon">Take your selfie to generate emoji</b>
+      	<br><br>
+        <b class= "emotion" style="color: yellow">Are you Happy?</b>
+        <br>
+        <b class= "emotion" style="color: black">Are you Sad?</b>
+        <br>
+        <b class= "emotion" style="color: red">Are you Surprised?</b>
+        <br>
+      </p>
+
+      <br><br>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label> Webcam View - </label>
+        <div id= "camera"></div>
+        <br>
+        <button onclick= "Take_snap()" class= "btn btn-danger"> Capture Image </button>
+      </div>
+
+       
+
+        <div class= "col-md-4 col-sm-12 col-xs-12">
+          <label class= "predict"> Prediction - 1 </label>
+          <p class= "emotion_name" id= "result1"></p>
+          <p class= "emoji" id= "updated_1"></p>
+
+<label class= "predict"> Prediction - 2 </label>
+<p class= "emotion_name" id= "result2"></p>
+<p class= "emoji" id= "updated_2"></p>
+        </div>
+
+
+        <div class= "col-md-4 col-sm-12 col-xs-12">
+          <label> Snapshot - </label>
+          <div id= "snap"></div>
+          <br>
+          <button onclick= "identify_emotion()" class= "btn btn-info"> Check </button>
+        </div>
+</center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

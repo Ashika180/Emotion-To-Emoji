@@ -1,0 +1,57 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #snap
+{
+  border:4px dashed black;
+  width: 450px;
+  height: 300px;
+}
+#result1 ,#result2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+.heading{
+  font-family: 'Redressed', cursive;
+  font-weight: 800;
+  font-size: 25px;
+  color: black;
+}
+
+.emotion{
+  font-family: Comic Sans MS;
+}
+
+label{
+  letter-spacing: 1px;
+  font-size: 20px;
+  background-color: black;
+  color: plum;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.predict{
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  background: brown;
+  color: gold;
+}
+
+#captured_image{
+  width: 450px;
+  height: 300px;
+}
